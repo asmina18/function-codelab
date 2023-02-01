@@ -32,6 +32,7 @@ function gatherInputData() {
 // håndterer data behandling  (controller code fra MVC)
 function makeExchange(myEuroRate, myDollarRate, myDanishAmount) {
 
+    
     let myDollars = calculateExchange(myDanishAmount, myDollarRate);
     let myEuros = calculateExchange(myDanishAmount, myEuroRate);
 
@@ -57,4 +58,6 @@ function showResult(myEuroResult, myDollarResult, myDanishAmount) {
 
 //  funktion der returnerer en veksel udregning skal skrives her
 
-
+function calculateExchange(danskKrone,myRate){
+ return danskKrone*myRate;
+}

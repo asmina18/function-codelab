@@ -1,6 +1,10 @@
 
 
 // her kaldes, eller invokes din funktion
-helloWorld("hello world, med parameter");
+helloWorld(1,2);
 
 // her skal du skrive din funktion
+function helloWorld(minValue,minAndenValue){
+  let resultate = minValue + minAndenValue;
+    console.log(resultate);
+}
